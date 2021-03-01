@@ -1,0 +1,103 @@
+.slider {
+    position: relative;
+    margin: 0 auto;
+}
+.news {
+    padding: 140px 0;
+    width: 100vw;
+    height: 1035px;
+    background-image: url('../img/bg-news.png'), linear-gradient(to top, #3c7fd4, #24ccfa);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__title {
+        margin-bottom: 100px;
+        font-family: 'Gotham Bold', sans-serif;
+
+        font: {
+            size: 44px;
+            weight: 500;
+        }
+
+        color: $main-color;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 0.5;
+
+        &::before {
+            content: '';
+            display: block;
+            margin: 0 auto 40px;
+            width: 100px;
+            border-bottom: 1px solid $main-color;
+        }
+
+    }
+
+}
+.board {
+    width: 370px;
+    position: relative;
+    margin: 0 20px;
+    // height: 514px;
+    padding-bottom: 30px;
+    background-color: $main-color;
+    &__title {
+        margin: 30px 0 20px 20px;
+        font-family: 'Gotham Medium', sans-serif;
+
+        font: {
+            size: 22px;
+            weight: 800;
+        }
+
+        line-height: 1.55;
+        text-transform: uppercase;
+        color: $primary-color;
+    }
+
+    &__desc {
+        margin-left: 20px;
+        font-family: 'Open Sans', sans-serif;
+
+        font: {
+            size: 18px;
+        }
+        line-height: 30px;
+        color: $desc-color;
+
+    }
+    &__inner {
+        margin: 35px 0 30px 20px;
+        display: flex;
+        justify-content: left;
+    }
+    &__inner-wrapper {
+        margin-left: 20px;
+        height: 60px;
+    }
+}
+.name {
+    margin-bottom: 13px;
+        font-family: 'Gotham Book', sans-serif;
+        font: {
+            size: 18px;
+            weight: 400;
+        }
+        line-height: 1.22;
+        text-transform: uppercase;
+        color: $primary-color;
+    }
+.date {
+    margin-bottom: 13px;
+    font-family: 'Gotham Medium', sans-serif;
+    font: {
+        size: 14px;
+        weight: 400;
+    }
+    line-height: 22px;
+    color: $date-color;
+}
+//slider-dots 
+.right-tick {
+    width: 30px;
+}

@@ -1,0 +1,32 @@
+.gallery {
+    padding: 140px 0;
+    &__title {
+        margin-bottom: 95px;
+        text: {
+            transform: uppercase;
+            align: center;
+        }
+        color: $primary-color;
+        font-family: 'Gotham Bold', sans-serif;
+        font-size: 44px;
+        font-weight: 700;
+    }
+    &__title::before {
+        content: '';
+        display: block;
+        width: 100px;
+        margin: 0 auto 40px;
+        border-top: 2px solid $primary-color;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__mosaic {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    
+}

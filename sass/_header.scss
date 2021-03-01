@@ -1,2 +1,36 @@
-@import "mixins.scss";
-@import "fonts.scss";
+.header {
+    background-image: url(/img/tu-tram-pham-202263.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(45deg, #55b7ff 0%, #7d59ff 100%);
+    font-family: 'Gotham Medium', sans-serif;
+    font-weight: 400;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__menu {
+        width: 594px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        list-style-image: url(/img/marker-none.png);
+        color: $main-color;
+        &__item:hover {
+        list-style-image: url(/img/marker-fill.png);
+        }
+    }
+    &__item > a {
+        color: $main-color;
+        text-transform: uppercase;
+    }
+    &__social {
+        display: flex;
+        width: 160px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}

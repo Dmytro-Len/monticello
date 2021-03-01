@@ -1,0 +1,85 @@
+.ourGoal {
+    padding: 140px 0;
+    &__title {
+        text: {
+            transform: uppercase;
+            align: center;
+        }
+        color: $primary-color;
+        font-family: 'Gotham Bold', sans-serif;
+        font-size: 44px;
+        font-weight: 700;
+    }
+    &__title::before {
+        content: '';
+        display: block;
+        width: 100px;
+        margin: 0 auto 40px;
+        border-top: 2px solid $primary-color;
+    }
+    &__card {
+        width: inherit;
+        margin-top: 170px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-bg {
+        position: absolute;
+        z-index: -1;
+        top: -30px;
+        left: -215px;
+        width: 585px;
+        height: 470px;
+        background-color: $date-color;
+        &--secondary {
+            position: absolute;
+            width: 585px;
+            height: 470px;
+            z-index: -1;
+            top: -30px;
+            right: -215px;
+            background-color: $behind-color;
+
+        }
+    }
+    &__desc {
+        width: 460px;
+        padding-top: 70px;
+        font-family: 'Gotham Book', sans-serif;
+    }
+}
+.card__image {
+    // display: block;
+    // width: 630px;
+    padding-top: 70px;
+}
+//description block
+.card__pretitle {
+    padding-top: 58px;
+    font: {
+        size: 22px;
+        weight: 400;
+    }
+    text-transform: uppercase;
+    color: $primary-color;
+}
+.card__title {
+    margin-top: 5px;
+    font: {
+        size: 44px;
+        weight: 700;
+    }
+    text-transform: uppercase;
+    color: $primary-color;
+}
+.card__definition {
+    margin: 38px 0 36px;
+    font-family: 'Open Sans', sans-serif;
+    font: {
+        size: 18px;
+        weight: 400;
+    }
+    line-height: 30px;
+    color: $desc-color;
+}

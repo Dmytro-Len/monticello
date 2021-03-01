@@ -1,5 +1,37 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+.btn-details {
+    width: 190px;
+    height: 50px;
+    border: 1px solid $desc-color;
+    border-bottom: 2px solid $desc-color;
+    color: $primary-color;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.address {
+    margin-top: 60px;
+    font-family: 'Open Sans', sans-serif;
+    // font-style: italic;
+    font: {
+        size: 18px;
+        weight: 400;
+        style: italic;
+    }
+}
+//TOP-SLIDER
+
+
+//LATEST-NEWS-SLIDER
+
+
+//others
+.white-heart {
+    // color: $main-color;
+    color: red;
+}
+.align-center {
+    margin: 60px auto;
 }
