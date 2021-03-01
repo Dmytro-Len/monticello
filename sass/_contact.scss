@@ -1,0 +1,80 @@
+.contact {
+    position: relative;
+    top: -300px;
+    display: block;
+    width: 770px;
+    height: 450px;
+    margin: 0 auto;
+    padding: 60px;
+    // border: 2px solid black;
+    background-color: $main-color;
+    font-family: 'Gotham Book', sans-serif;
+        font: {
+            size: 18px;
+            weight: 400;
+        }
+
+    &__title {
+        text: {
+            transform: uppercase;
+            align: center;
+        }
+
+        color: $primary-color;
+        font-family: 'Gotham Bold',
+        sans-serif;
+        font-size: 44px;
+        font-weight: 700;
+    }
+
+    &__title::before {
+        content: '';
+        display: block;
+        width: 100px;
+        margin: 0 auto 40px;
+        border-top: 2px solid $primary-color;
+    }
+    &__wrapper {
+        display: flex;
+        margin-top: 60px;
+        justify-content: space-between;
+    }
+    &__form {
+        font-family: 'Gotham Book', sans-serif;
+        font: {
+            size: 18px;
+            weight: 400;
+        }
+    }
+    &__form > input[type=text] {
+        display: block;
+        width: 310px;
+        margin-bottom: 38px;
+        padding-bottom: 20px;
+        border: none;
+        border-bottom: 1px solid $desc-color;
+    }
+    &__form > input[type=email] {
+        display: block;
+        width: 310px;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border: none;
+        border-bottom: 1px solid $desc-color;
+    }
+}
+.contact-icon-color {
+    color: $behind-color;
+}
+.contact__info > p:nth-child(1) {
+    margin-bottom: 40px;
+}
+.contact__info > p:nth-child(2) {
+    margin-bottom: 40px;
+}
+.contact__info > p:nth-child(3) {
+    margin-bottom: 40px;
+}
+.contact__info > p:nth-child(4) {
+    margin-bottom: 40px;
+}

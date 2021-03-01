@@ -17,6 +17,7 @@
 }
 
 .btn-details {
+  display: block;
   width: 190px;
   height: 50px;
   border: 1px solid #4b5562;
@@ -24,6 +25,16 @@
   color: #2c4058;
   font-size: 14px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+.btn-details:hover {
+  background-color: #7e5aff;
+}
+
+.btn-form {
+  width: 140px;
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .address {
@@ -46,33 +57,20 @@
   background-image: url(/img/tu-tram-pham-202263.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background: -o-linear-gradient(45deg, #55b7ff 0%, #7d59ff 100%);
   background: linear-gradient(45deg, #55b7ff 0%, #7d59ff 100%);
   font-family: "Gotham Medium", sans-serif;
   font-weight: 400;
 }
 .header__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 .header__menu {
   width: 594px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   font-size: 14px;
   list-style-image: url(/img/marker-none.png);
   color: #fff;
@@ -85,16 +83,10 @@
   text-transform: uppercase;
 }
 .header__social {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 160px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .ourGoal {
@@ -119,12 +111,8 @@
   width: inherit;
   margin-top: 170px;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .ourGoal-bg {
   position: absolute;
@@ -185,11 +173,10 @@
 }
 
 .news {
+  position: relative;
   padding: 140px 0;
   width: 100vw;
   height: 1035px;
-  background-image: url("../img/bg-news.png"), -webkit-gradient(linear, left bottom, left top, from(#3c7fd4), to(#24ccfa));
-  background-image: url("../img/bg-news.png"), -o-linear-gradient(bottom, #3c7fd4, #24ccfa);
   background-image: url("../img/bg-news.png"), linear-gradient(to top, #3c7fd4, #24ccfa);
   background-repeat: no-repeat;
   background-size: cover;
@@ -237,12 +224,8 @@
 }
 .board__inner {
   margin: 35px 0 30px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  justify-content: left;
 }
 .board__inner-wrapper {
   margin-left: 20px;
@@ -268,8 +251,16 @@
   color: #55b7ff;
 }
 
+.left-tick {
+  position: absolute;
+  left: 250px;
+  top: 550px;
+}
+
 .right-tick {
-  width: 30px;
+  position: absolute;
+  right: 250px;
+  top: 550px;
 }
 
 .gallery {
@@ -292,27 +283,14 @@
   border-top: 2px solid #2c4058;
 }
 .gallery__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .gallery__mosaic {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 #map {
@@ -321,16 +299,107 @@
   height: 700px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.contact {
+  position: relative;
+  top: -300px;
+  display: block;
+  width: 770px;
+  height: 450px;
+  margin: 0 auto;
+  padding: 60px;
+  background-color: #fff;
+  font-family: "Gotham Book", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.contact__title {
+  text-transform: uppercase;
+  text-align: center;
+  color: #2c4058;
+  font-family: "Gotham Bold", sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+}
+.contact__title::before {
+  content: "";
+  display: block;
+  width: 100px;
+  margin: 0 auto 40px;
+  border-top: 2px solid #2c4058;
+}
+.contact__wrapper {
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+.contact__form {
+  font-family: "Gotham Book", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.contact__form > input[type=text] {
+  display: block;
+  width: 310px;
+  margin-bottom: 38px;
+  padding-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #4b5562;
+}
+.contact__form > input[type=email] {
+  display: block;
+  width: 310px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #4b5562;
+}
+
+.contact-icon-color {
+  color: #7e5aff;
+}
+
+.contact__info > p:nth-child(1) {
+  margin-bottom: 40px;
+}
+
+.contact__info > p:nth-child(2) {
+  margin-bottom: 40px;
+}
+
+.contact__info > p:nth-child(3) {
+  margin-bottom: 40px;
+}
+
+.contact__info > p:nth-child(4) {
+  margin-bottom: 40px;
+}
+
+.footer {
+  display: block;
+  position: relative;
+  top: -450px;
+  z-index: -1;
+  padding: 204px 0 210px;
+  background: url("/img/bg-footer.png"), linear-gradient(to top, #55b7ff, #7e5aff);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer__inner {
+  display: flex;
+  width: 770px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__copyright {
+  margin-top: 42px;
+  font-family: "Gotham Medium", sans-serif;
+  font-size: 14px;
+  color: #fff;
 }
 
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }

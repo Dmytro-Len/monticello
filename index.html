@@ -31,8 +31,8 @@
                 <ul class="header__menu">
                     <li class="header__item"><a href="#aboutUs">about us</a></li>
                     <li class="header__item"><a href="#projects">projects</a></li>
-                    <li class="header__item"><a href="#aboutUs">news</a></li>
-                    <li class="header__item"><a href="#aboutUs">contact</a></li>
+                    <li class="header__item"><a href="#news">news</a></li>
+                    <li class="header__item"><a href="#form">contact</a></li>
                 </ul>
                 <div class="header__social">
                     <div class="icon__facebook">
@@ -59,16 +59,19 @@
                 <div class="ourGoal__desc">
                     <h5 class="card__pretitle">one world</h5>
                     <h4 class="card__title">trade center</h4>
-                    <p class="card__definition">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+                    <p class="card__definition">Increasing prosperity in our lives can be accomplished by having the
+                        right frame of mind. The truth is, our thoughts are very powerful.</p>
                     <button class="btn-details">more details</button>
-                    <p class="address"><i class="fas fa-map-marker-alt"></i> New York City, United States - 1776 feet</p>
+                    <p class="address"><i class="fas fa-map-marker-alt"></i> New York City, United States - 1776 feet
+                    </p>
                 </div>
             </div>
             <div class="ourGoal__card">
                 <div class="ourGoal__desc">
                     <h5 class="card__pretitle">international</h5>
                     <h4 class="card__title">commerce center</h4>
-                    <p class="card__definition">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.
+                    <p class="card__definition">Successful businesses have many things in common, today we’ll look at
+                        the big ‘R’ of recognition and how a digital advertising network may help.
                     </p>
                     <button class="btn-details">more details</button>
                     <p class="address"><i class="fas fa-map-marker-alt"></i> Hong Kong - 1588 Feet</p>
@@ -78,11 +81,10 @@
             </div>
         </div>
     </section>
-    <section class="news">
+    <section id="news" class="news">
         <div class="container">
             <h3 class="news__title">latest news</h3>
-            <img src="img/right-tick.png" alt="right-click">
-            <img src="img/right-tick.png" alt="right-click">
+            <img src="img/left-tick.png" class="left-tick" alt="left-tick">
             <div class="slider">
                 <div class="board">
                     <img src="img/lauren-mancke-60633.jpg" alt="lauren-mancke">
@@ -97,7 +99,7 @@
                     </div>
                 </div>
                 <div class="board">
-                    <img src="img/lauren-mancke-60633.jpg" alt="lauren-mancke">
+                    <img src="img/matthew-hamilton-202227.jpg" alt="matthew-hamilton">
                     <h4 class="board__title">See The Unmatched Beauty Of The Great.</h4>
                     <p class="board__desc">Free directories: directories are perfect for customers that are... searching for</p>
                     <div class="board__inner">
@@ -109,7 +111,7 @@
                     </div>
                 </div>
                 <div class="board">
-                    <img src="img/lauren-mancke-60633.jpg" alt="lauren-mancke">
+                    <img src="img/hypnotize.jpg" alt="matthew-hamilton">
                     <h4 class="board__title">See The Unmatched Beauty Of The Great.</h4>
                     <p class="board__desc">Free directories: directories are perfect for customers that are... searching for</p>
                     <div class="board__inner">
@@ -121,6 +123,7 @@
                     </div>
                 </div>
             </div>
+            <img src="img/right-tick.png" class="right-tick" alt="right-tick">
         </div>
     </section>
     <section class="gallery">
@@ -146,31 +149,50 @@
     </section>
     <section id="map">
     </section>
+    <section id="contact" class="contact">
+        <div class="contact__title">get in touch</div>
+        <div class="contact__wrapper">
+            <div class="contact__info">
+                <p><i class="fas fa-map-marker-alt contact-icon-color"></i> 91 Nolan Extensions Suite 670</p>
+                <p><i class="fas fa-phone-alt contact-icon-color"></i> +001 356-868-2454</p>
+                <p><i class="fas fa-inbox contact-icon-color"></i> gahuy93@gmailcom</p>
+                <p><i class="fas fa-clock contact-icon-color"></i> From 07:05AM to 19:30PM</p>
+            </div>
+            <form class="contact__form" action="#" method="post">
+                <input type="text" value="Mollie Medina" required>
+                <input type="email" placeholder="Email" required>
+                <button class="btn-details btn-form" type="submit">submit</button>
+            </form>
+    </section>
     <footer class="footer">
-        <div class="header__logo">
-            <img src="img/logo.svg" width="243" alt="logo">
+        <div class="footer__inner">
+            <div class="header__logo">
+                <img src="img/logo.svg" width="243" alt="logo">
+            </div>
+            <div class="header__social">
+                <div class="icon__facebook">
+                    <img src="/img/icon-facebook.png" width="41" alt="facebook">
+                </div>
+                <div class="icon__twitter">
+                    <img src="/img/icon-twitter.png" width="41" alt="twitter">
+                </div>
+                <div class="icon__instagram">
+                    <img src="/img/icon-insta.png" width="41" alt="instagram">
+                </div>
+            </div>
         </div>
-        <div class="header__social">
-            <div class="icon__facebook">
-                <img src="/img/icon-facebook.png" width="41" alt="facebook">
-            </div>
-            <div class="icon__twitter">
-                <img src="/img/icon-twitter.png" width="41" alt="twitter">
-            </div>
-            <div class="icon__instagram">
-                <img src="/img/icon-insta.png" width="41" alt="instagram">
-            </div>
+        <div class="footer__inner">
+            <span class="footer__copyright">Copyrights &#169; 2017 Monticello | Made with <i
+                    class="fas fa-heart white-heart"></i> Ga Huy</span>
         </div>
-
     </footer>
 
-    <span>Copyrights &#169; 2017 Monticello  |  Made with <i class="fas fa-heart white-heart"></i> Ga Huy</span>
-    
+
     <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYWXltXjSqezBaK0AZAKfBpcoFvYLD7c4&callback=initMap&libraries=&v=weekly"
-    async
-  ></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYWXltXjSqezBaK0AZAKfBpcoFvYLD7c4&callback=initMap&libraries=&v=weekly"
+        async></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/googlemap.js"></script>

@@ -1,5 +1,24 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.footer {
+    display: block;
+    position: relative;
+    top: -450px;
+    z-index: -1;
+    padding: 204px 0 210px;
+
+    background:url('/img/bg-footer.png'), linear-gradient(to top, #55b7ff, #7e5aff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__inner {
+        display: flex;
+        width: 770px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__copyright {
+        margin-top: 42px;
+        font-family: 'Gotham Medium', sans-serif;
+        font-size: 14px;
+        color: $main-color;
+    }
 }
