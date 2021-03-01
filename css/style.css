@@ -172,6 +172,28 @@
   margin: 0 auto;
 }
 
+.slick-dots {
+  padding: 0;
+  margin: 0;
+  width: 50px;
+  margin: 20px auto;
+  display: flex;
+}
+.slick-dots button {
+  font-size: 0;
+  border: 1px solid #fff;
+  width: 10px;
+  height: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.slick-active button {
+  background-color: #fff;
+  border: none;
+}
+
 .news {
   position: relative;
   padding: 140px 0;
