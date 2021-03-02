@@ -23,10 +23,19 @@
         flex-direction: row;
         justify-content: space-between;
     }
+    &__panorama > img {
+        width: 580px;
+        height: 432px;
+        margin-right: 10px;
+    }
     &__mosaic {
         display: flex;
         justify-content: space-between;
         align-items: stretch;
+    }
+    &__mosaic-inner > img {
+        width: 285px;
+        height: 214px;
     }
     
 }

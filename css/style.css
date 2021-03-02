@@ -11,6 +11,10 @@
   font-family: "Gotham Book", sans-serif;
   src: url("/fonts/Gotham-Book.woff") format("woff");
 }
+body {
+  padding-bottom: 0;
+}
+
 .container {
   width: 1170px;
   margin: 0 auto;
@@ -37,6 +41,10 @@
   margin-left: auto;
 }
 
+.btn-gallery {
+  margin: 60px auto;
+}
+
 .address {
   margin-top: 60px;
   font-family: "Open Sans", sans-serif;
@@ -46,23 +54,52 @@
 }
 
 .white-heart {
-  color: red;
+  color: #fff;
 }
 
 .align-center {
   margin: 60px auto;
 }
 
+.scroll-icon {
+  position: relative;
+  top: -100px;
+  left: calc(50% - 20px);
+}
+
 .header {
-  background-image: url(/img/tu-tram-pham-202263.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background: linear-gradient(45deg, #55b7ff 0%, #7d59ff 100%);
+  width: 100%;
+  height: 800px;
   font-family: "Gotham Medium", sans-serif;
   font-weight: 400;
 }
+.header__title {
+  position: absolute;
+  top: 370px;
+  left: 30%;
+  font-family: "Gotham Bold", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.header__pretitle {
+  position: absolute;
+  top: 468px;
+  left: 35%;
+  font-family: "Gotham Medium", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5.4px;
+}
 .header__wrapper {
   display: flex;
+  width: 1170px;
+  margin: 0 auto;
+  position: absolute;
+  top: 53px;
   justify-content: space-between;
   align-items: center;
 }
@@ -72,11 +109,13 @@
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
-  list-style-image: url(/img/marker-none.png);
   color: #fff;
 }
-.header__menu__item:hover {
-  list-style-image: url(/img/marker-fill.png);
+.header__item {
+  list-style-image: url("../img/marker-none.png");
+}
+.header__item:hover {
+  list-style-image: url("../img/marker-fill.png");
 }
 .header__item > a {
   color: #fff;
@@ -87,6 +126,46 @@
   width: 160px;
   justify-content: space-between;
   align-items: center;
+}
+
+.header__slider {
+  width: 100vw;
+  height: 800px;
+  position: relative;
+}
+
+.slider__item--first {
+  height: 800px;
+  width: 100%;
+  background: url("../img/bg-header.png"), linear-gradient(to top, #55b7ff, #7e5aff);
+}
+
+.slider__item--second {
+  height: 800px;
+  width: 100%;
+  background: url("../img/bg-footer.png"), linear-gradient(to top, #55b7ff, #7e5aff);
+}
+
+.slider__item--third {
+  height: 800px;
+  width: 100%;
+  background: url("../img/tu-tram-pham-202263.png"), linear-gradient(to top, #55b7ff, #7e5aff);
+}
+
+.header__dots {
+  position: relative;
+}
+
+.header__dots > .slick-dots {
+  width: 9px;
+  height: 156px;
+  position: absolute;
+  top: -550px;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .ourGoal {
@@ -309,10 +388,19 @@
   flex-direction: row;
   justify-content: space-between;
 }
+.gallery__panorama > img {
+  width: 580px;
+  height: 432px;
+  margin-right: 10px;
+}
 .gallery__mosaic {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+}
+.gallery__mosaic-inner > img {
+  width: 285px;
+  height: 214px;
 }
 
 #map {
