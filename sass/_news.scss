@@ -1,6 +1,6 @@
-.slider {
+.my-slider {
     position: relative;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 .slick-dots {
    padding: 0;
@@ -123,13 +123,4 @@
     color: $date-color;
 }
 //slider-dots 
-.left-tick {
-    position: absolute;
-    left: 250px;
-    top: 550px;
-}
-.right-tick {
-    position: absolute;
-    right: 250px;
-    top: 550px;
-}
+

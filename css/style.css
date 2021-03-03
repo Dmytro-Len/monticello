@@ -67,6 +67,18 @@ body {
   left: calc(50% - 20px);
 }
 
+.left-tick {
+  position: absolute;
+  left: 5%;
+  top: 550px;
+}
+
+.right-tick {
+  position: absolute;
+  right: 5%;
+  top: 550px;
+}
+
 .header {
   width: 100%;
   height: 800px;
@@ -352,18 +364,6 @@ body {
   color: #55b7ff;
 }
 
-.left-tick {
-  position: absolute;
-  left: 250px;
-  top: 550px;
-}
-
-.right-tick {
-  position: absolute;
-  right: 250px;
-  top: 550px;
-}
-
 .gallery {
   padding: 140px 0;
 }
@@ -508,8 +508,19 @@ body {
   color: #fff;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@media screen and (max-width: 992px) {
+  .ourGoal-bg {
+    display: none;
+  }
+  .ourGoal-bg--secondary {
+    display: none;
+  }
+
+  .left-tick {
+    left: 2%;
+  }
+
+  .right-tick {
+    right: 2%;
+  }
 }

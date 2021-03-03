@@ -167,8 +167,8 @@ const myStyle = [
           }
       ]
   }
-]
-const style1 = JSON.parse(mapstyle)
+];
+
 function initMap() {
     const place = {lat: 40.68, lng: -73.94 };
     const map = new google.maps.Map(document.getElementById("map"), {
@@ -179,6 +179,6 @@ function initMap() {
       const marker = new google.maps.Marker({
           position: place,
           map,
-          icon: '../img/icon-marker.png',
+          icon: './img/icon-marker.png',
       })
 }

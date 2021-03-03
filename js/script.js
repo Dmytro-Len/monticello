@@ -1,10 +1,10 @@
 $(function() {
-  $('.slider').slick({
+  $('.my-slider').slick({
       dots: true,
       infinite: true,
       speed: 300,
-      slidesToShow: 3,
-      centerMode: false,
+      slidesToShow: 2,
+      centerMode: true,
       variableWidth: true,
       autoplay: true,
       autoplaySpeed: 4000,
@@ -12,21 +12,12 @@ $(function() {
       nextArrow: $('.right-tick'),
       responsive: [
         {
-          breakpoint: 698,
+          breakpoint: 992,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 2,
             infinite: true,
             dots: true,
-          }
-        },
-        {
-          breakpoint: 375,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false,
           }
         },
       ]

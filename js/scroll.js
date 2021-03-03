@@ -15,3 +15,10 @@ $(document).ready(function(){
       } 
     });
   });
+
+//button scroll
+  $(".scroll-icon").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $("#projects").offset().top
+    }, 1000);
+});

@@ -1,5 +1,25 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@media screen and (min-width: 1400px) {
+    
+}
+@media screen and (max-width: 992px) {
+    .ourGoal {
+        &-bg {
+            display: none;
+            &--secondary {
+                display: none;
+            }
+        }
+    }
+    .left-tick {
+        left: 2%;
+    }
+    .right-tick {
+        right: 2%;
+    }
+}
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (max-width: 375px) {
+    
 }

@@ -57,5 +57,14 @@ body {
     position: relative;
     top: -100px;
     left: calc(50% - 20px);
-
+}
+.left-tick {
+    position: absolute;
+    left: 5%;
+    top: 550px;
+}
+.right-tick {
+    position: absolute;
+    right: 5%;
+    top: 550px;
 }
